@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - E-Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-white text-gray-900 flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold tracking-tight">E-Shop<span
+                    class="text-blue-600">.</span></a>
+
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                <a href="index.html" class="hover:text-gray-900 transition">Home</a>
+                <a href="products.html" class="hover:text-gray-900 transition">Shop</a>
+                <a href="about.html" class="text-gray-900 border-b-2 border-gray-900 pb-1">About</a>
+            </div>
+
+            <div class="flex items-center space-x-6">
+                <a href="cart.html" class="relative group">
+                    <svg class="w-6 h-6 text-gray-700 group-hover:text-gray-900 transition" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                    </svg>
+                    <span id="cart-count"
+                        class="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center hidden">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Content -->
+    <div class="max-w-4xl mx-auto px-6 py-20 flex-grow">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Simplifying Life Through Design.</h1>
+            <p class="text-xl text-gray-500 max-w-2xl mx-auto">We believe that less is more. Our mission is to provide
+                high-quality, minimalist products that bring joy and functionality to your daily routine.</p>
+        </div>
+
+        <div class="bg-gray-50 rounded-3xl overflow-hidden mb-20">
+            <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200"
+                alt="Office" class="w-full h-96 object-cover">
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Our Story</h3>
+                <p class="text-gray-600 leading-relaxed mb-6">Founded in 2024, E-Shop began with a simple idea: the
+                    world is too cluttered. We wanted to create a space where people could find thoughtfully designed
+                    products that don't scream for attention but quietly perform their function perfectly.</p>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Our Philosophy</h3>
+                <p class="text-gray-600 leading-relaxed mb-6">Quality over quantity. We strictly curate our collection
+                    to ensure every item meets our high standards for durability, aesthetics, and sustainability. We
+                    don't just sell things; we offer tools for a better lifestyle.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="bg-gray-900 text-white py-24">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="font-semibold mb-2">Visit Us</h4>
+                    <p class="text-gray-400">123 Minimalist St,<br>Jakarta, Indonesia</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-2">Email Us</h4>
+                    <p class="text-gray-400">hello@eshop.com</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-2">Call Us</h4>
+                    <p class="text-gray-400">+62 21 555 1234</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2024 E-Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - E-Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-white text-gray-900 flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold tracking-tight">E-Shop<span
+                    class="text-blue-600">.</span></a>
+
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                <a href="index.html" class="hover:text-gray-900 transition">Home</a>
+                <a href="products.html" class="hover:text-gray-900 transition">Shop</a>
+                <a href="about.html" class="hover:text-gray-900 transition">About</a>
+            </div>
+
+            <div class="flex items-center space-x-6">
+                <a href="cart.html" class="relative group">
+                    <svg class="w-6 h-6 text-gray-900 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                    </svg>
+                    <span id="cart-count"
+                        class="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center hidden">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Page Content -->
+    <div class="max-w-7xl mx-auto px-6 py-12 flex-grow" id="cart-container">
+        <h1 class="text-3xl font-bold mb-8">Shopping Cart</h1>
+
+        <div class="flex flex-col lg:flex-row gap-12">
+            <!-- Items List -->
+            <div class="flex-1" id="cart-items-container">
+                <!-- Injected by JS -->
+            </div>
+
+            <!-- Order Summary -->
+            <div class="w-full lg:w-96" id="order-summary" style="display: none;">
+                <div class="bg-gray-50 p-8 rounded-2xl sticky top-24">
+                    <h2 class="text-xl font-bold mb-6">Order Summary</h2>
+                    <div class="space-y-4 mb-6">
+                        <div class="flex justify-between text-gray-600">
+                            <span>Subtotal</span>
+                            <span id="cart-subtotal">Rp 0</span>
+                        </div>
+                        <div class="flex justify-between text-gray-600">
+                            <span>Shipping</span>
+                            <span id="cart-shipping">Free</span>
+                        </div>
+                        <div class="border-t pt-4 flex justify-between font-bold text-xl">
+                            <span>Total</span>
+                            <span id="cart-total">Rp 0</span>
+                        </div>
+                    </div>
+                    <a href="checkout.html"
+                        class="block w-full bg-gray-900 text-white text-center py-4 rounded-xl font-semibold hover:bg-gray-800 transition">
+                        Proceed to Checkout
+                    </a>
+                    <p class="text-xs text-center text-gray-500 mt-4">Safe and secure checkout via Stripe</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2024 E-Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

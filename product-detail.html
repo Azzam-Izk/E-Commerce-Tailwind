@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - E-Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-white text-gray-900 flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold tracking-tight">E-Shop<span
+                    class="text-blue-600">.</span></a>
+
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                <a href="index.html" class="hover:text-gray-900 transition">Home</a>
+                <a href="products.html" class="text-gray-900 border-b-2 border-gray-900 pb-1">Shop</a>
+                <a href="about.html" class="hover:text-gray-900 transition">About</a>
+            </div>
+
+            <div class="flex items-center space-x-6">
+                <a href="cart.html" class="relative group">
+                    <svg class="w-6 h-6 text-gray-700 group-hover:text-gray-900 transition" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                    </svg>
+                    <span id="cart-count"
+                        class="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center hidden">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="max-w-7xl mx-auto px-6 py-6 text-sm text-gray-500">
+        <a href="index.html" class="hover:text-gray-900">Home</a>
+        <span class="mx-2">/</span>
+        <a href="products.html" class="hover:text-gray-900">Shop</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-900">Detail</span>
+    </div>
+
+    <!-- Product Detail Container -->
+    <div class="max-w-7xl mx-auto px-6 py-8" id="product-detail-container">
+        <!-- Content injected by JS -->
+    </div>
+
+    <!-- Related products could go here -->
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2024 E-Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

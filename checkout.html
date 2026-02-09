@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - E-Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-white text-gray-900 flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold tracking-tight">E-Shop<span
+                    class="text-blue-600">.</span></a>
+            <div class="flex items-center space-x-6">
+                <a href="cart.html" class="flex items-center text-gray-600 hover:text-gray-900">
+                    <span class="mr-2">←</span> Back to Cart
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Checkout Content -->
+    <div class="max-w-3xl mx-auto px-6 py-12 flex-grow">
+        <h1 class="text-3xl font-bold mb-8">Checkout</h1>
+
+        <form
+            onsubmit="event.preventDefault(); alert('Order placed successfully! This is a demo.'); window.location.href='index.html';"
+            class="space-y-8">
+
+            <!-- Contact Info -->
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Contact Information</h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <input type="email" placeholder="Email Address" required
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gray-900 focus:outline-none">
+                    <input type="tel" placeholder="Phone Number" required
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gray-900 focus:outline-none">
+                </div>
+            </div>
+
+            <!-- Shipping Address -->
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Shipping Address</h2>
+                <div class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="First Name" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gray-900 focus:outline-none">
+                        <input type="text" placeholder="Last Name" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gray-900 focus:outline-none">
+                    </div>
+                    <input type="text" placeholder="Address" required
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gray-900 focus:outline-none">
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <input type="text" placeholder="City" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gray-900 focus:outline-none">
+                        <input type="text" placeholder="State" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gray-900 focus:outline-none">
+                        <input type="text" placeholder="ZIP Code" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gray-900 focus:outline-none">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment -->
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Payment Details</h2>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <p class="text-gray-500 text-sm mb-4">Demo Payment (No real processing)</p>
+                    <div class="space-y-4">
+                        <input type="text" placeholder="Card Number"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gray-900 focus:outline-none bg-white">
+                        <div class="grid grid-cols-2 gap-4">
+                            <input type="text" placeholder="MM/YY"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gray-900 focus:outline-none bg-white">
+                            <input type="text" placeholder="CVC"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gray-900 focus:outline-none bg-white">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit"
+                class="w-full bg-gray-900 text-white py-4 rounded-xl font-bold text-lg hover:bg-gray-800 transition shadow-lg">
+                Pay Now
+            </button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2024 E-Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
